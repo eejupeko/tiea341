@@ -1,0 +1,48 @@
+areaOfBigCircle
+== {- Substitute: areaOfBigCircle = pi * 10 ** 2 -}
+pi * 10 ** 2
+== {- Calculate the exponential: 10 ** 2 ==  100 -}
+pi * 100
+== {- Substitute: pi == 3.14 -}
+3.14 * 100
+== {- Calculate the multiplication 3.14 * 100 = 314 -}
+314
+
+
+enthusiasticGreeting
+== {- Substitute: enthusiasticGreeting = greeting ++ "!" -}
+greeting ++ "!"
+== {- Substitute: greeting = "Hello " ++ "Jill" -}
+"Hello " ++ "Jill" ++ "!"
+== {- (++) is right associative -}
+"Hello " ++ ("Jill" ++ "!")
+== {- Calculate "Jill" ++ "!" = "Jill!" -}
+"Hello " ++ "Jill!"
+== {- Calculate "Hello " ++ "Jill!" -}
+"Hello Jill!"
+
+
+greeting ++ "," ++ enthusiasticGreeting
+== {- Substitute: greeting = "Hello " ++ "Jill" -}
+"Hello " ++ "Jill" ++ "," ++ enthusiasticGreeting
+== {- Substitute enthusiasticGreeting = "Hello Jill!" -}
+"Hello " ++ "Jill" ++ "," ++ "Hello Jill!"
+== {- (++) is right associative -}
+"Hello " ++ ("Jill" ++ ("," ++ "Hello Jill!"))
+== {- Calculate "," ++ "Hello Jill!" = ",Hello Jill!" -}
+"Hello " ++ ("Jill" ++ ",Hello Jill!")
+== {- Calculate "Jill" ++ ",Hello Jill!" = "Jill,Hello Jill!" -}
+"Hello " ++ "Jill,Hello Jill!"
+== {- Calculate "Hello " ++ "Jill,Hello Jill!" = "Hello Jill,Hello Jill!" -}
+"Hello Jill,Hello Jill!"
+
+
+greeting ++ x 
+x is not defined. Error
+
+
+
+
+
+
+
